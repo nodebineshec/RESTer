@@ -52,7 +52,7 @@ const resterApi = {
     },
 };
 
-chrome.browserAction.onClicked.addListener(() => {
+chrome.action.onClicked.addListener(() => {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
         const resterUrl = chrome.runtime.getURL('site/index.html');
         const blankUrls = ['about:blank', 'about:newtab'];

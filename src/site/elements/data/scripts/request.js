@@ -18,7 +18,7 @@ const originalResponses = new Map();
 
 function requestWebRequestPermissions() {
     const requiredPermissions = {
-        permissions: ['webRequest', 'webRequestBlocking'],
+        permissions: ['webRequest'],
     };
 
     return new Promise((resolve, reject) => {
